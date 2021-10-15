@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext');
+
+
+:root {
+    --main-color: #2848a5;
+    --sec-color: #4d78b7;
+}
+
+body {
+    font-family: "Gotham Pro", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+@media (max-width: 1599px){
+    body {font-size: 18px;}
+}
+@media (max-width: 1399px){
+    body {font-size: 17px;}
+}
+@media (max-width: 1199px){
+    body {font-size: 16px;}
+}
+
+
+a, a:hover, a:focus, a:active {
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.simple {
+    color: var(--main-color);
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 1px solid rgba(1, 70, 168, 0.5);
+}
+a.simple:hover, a.simple:focus, a.simple:active {color: var(--main-color);}
+
+p, label, span, a, form, select, div, section, blockquote, cite, figure, figcaption, ul, ol, dl {
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.site_box {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+.rel {position: relative;}
+.disable {
+    pointer-events: none;
+    cursor: default;
+}
+
+.show_hidden {cursor: pointer;}
+.hidden_objects {display: none;}
+
+
+/*************** ЭЛЕМЕНТЫ ФОРМ ***************/
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active, 
+textarea, textarea:hover, textarea:focus, textarea:active,
+select, select:hover, select:focus, select:active {outline: none;}
+
+/* placeholder stylization */
+input:-moz-placeholder, textarea:-moz-placeholder {font-weight: 300; font-style: italic; color: rgba(0,0,0,0.5)}
+input::-moz-placeholder, textarea::-moz-placeholder {font-weight: 300; font-style: italic; color: rgba(0,0,0,0.5)}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {font-weight: 300; font-style: italic; color: rgba(0,0,0,0.5)}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {font-weight: 300; font-style: italic; color: rgba(0,0,0,0.5)}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {font-weight: 300; font-style: italic; color: rgba(0,0,0,0.5)}
+input::placeholder, textarea::placeholder {font-weight: 300; font-style: italic; color: rgba(0,0,0,0.5)}
+input, textarea {
+    border: 1px solid #b8b8b8;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: .4em .75em;
+    width: 100%;
+    line-height: normal;
+}
+
+.check-text {position: relative;}
+
+.check-text input {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    opacity: 0;
+    display: none;
+}
+.check-text label {
+    position: relative;
+    z-index: 1;
+    color: #3f3f3f;
+}
+.check-text input:checked + label {
+    color: var(--main-color);
+}
+
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    border: 1px solid #b8b8b8;
+    border-radius: .25em;
+    padding: .2em .5em;
+    line-height: normal;
+    background: url(../images/icons/down.png) no-repeat #fff;
+    background-position: 95% 50%;
+    background-size: auto 30%;
+}
+select::-ms-expand { /* for IE 11 */
+    display: none;
+}
+select:hover {cursor: pointer;}
+
+.btn_main {
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    line-height: normal;
+    padding: 0 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    min-height: 2em;
+    position: relative;
+}
+.btn_main:hover, .btn_main:focus, .btn_main:active {
+    color: #fff;
+    background-color: var(--sec-color);
+    cursor: pointer;
+}
+.btn_red {
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    background-color: #ea2529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    line-height: normal;
+    padding: 0 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    min-height: 2em;
+    border-radius: 2em;
+    position: relative;
+}
+.btn_red:hover, .btn_red:focus, .btn_red:active {
+    color: #fff;
+    background-color: #ea2529;
+    cursor: pointer;
+}
+
+/* Текстовые стили */
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3em;
+    margin: .75em 0 .25em;
+    text-shadow: 
+        -0   -2px 1px var(--main-color),
+         0   -2px 1px var(--main-color),
+        -0    2px 1px var(--main-color),
+         0    2px 1px var(--main-color),
+        -2px -0   1px var(--main-color),
+         2px -0   1px var(--main-color),
+        -2px  0   1px var(--main-color),
+         2px  0   1px var(--main-color),
+        -1px -2px 1px var(--main-color),
+         1px -2px 1px var(--main-color),
+        -1px  2px 1px var(--main-color),
+         1px  2px 1px var(--main-color),
+        -2px -1px 1px var(--main-color),
+         2px -1px 1px var(--main-color),
+        -2px  1px 1px var(--main-color),
+         2px  1px 1px var(--main-color),
+        -2px -2px 1px var(--main-color),
+         2px -2px 1px var(--main-color),
+        -2px  2px 1px var(--main-color),
+         2px  2px 1px var(--main-color),
+        -2px -2px 1px var(--main-color),
+         2px -2px 1px var(--main-color),
+        -2px  2px 1px var(--main-color),
+         2px  2px 1px var(--main-color);
+}
+h2 {
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.8em;
+    margin: .3em 0;
+    text-shadow: 
+        -0   -2px 1px var(--main-color),
+         0   -2px 1px var(--main-color),
+        -0    2px 1px var(--main-color),
+         0    2px 1px var(--main-color),
+        -2px -0   1px var(--main-color),
+         2px -0   1px var(--main-color),
+        -2px  0   1px var(--main-color),
+         2px  0   1px var(--main-color),
+        -1px -2px 1px var(--main-color),
+         1px -2px 1px var(--main-color),
+        -1px  2px 1px var(--main-color),
+         1px  2px 1px var(--main-color),
+        -2px -1px 1px var(--main-color),
+         2px -1px 1px var(--main-color),
+        -2px  1px 1px var(--main-color),
+         2px  1px 1px var(--main-color),
+        -2px -2px 1px var(--main-color),
+         2px -2px 1px var(--main-color),
+        -2px  2px 1px var(--main-color),
+         2px  2px 1px var(--main-color),
+        -2px -2px 1px var(--main-color),
+         2px -2px 1px var(--main-color),
+        -2px  2px 1px var(--main-color),
+         2px  2px 1px var(--main-color);
+}
+h3 {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: .75em;
+}
+h4 {
+    color: #fff;
+    font-size: 1.5em;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1em;
+    text-shadow: 
+        -0   -1px 2px var(--main-color),
+         0   -1px 2px var(--main-color),
+        -0    1px 2px var(--main-color),
+         0    1px 2px var(--main-color),
+        -1px -0   2px var(--main-color),
+         1px -0   2px var(--main-color),
+        -1px  0   2px var(--main-color),
+         1px  0   2px var(--main-color),
+        -1px -1px 2px var(--main-color),
+         1px -1px 2px var(--main-color),
+        -1px  1px 2px var(--main-color),
+         1px  1px 2px var(--main-color),
+        -1px -1px 2px var(--main-color),
+         1px -1px 2px var(--main-color),
+        -1px  1px 2px var(--main-color),
+         1px  1px 2px var(--main-color);
+}
+h5 {
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.f_08 {font-size: .8em;}
+.f_09 {font-size: .9em;}
+.f_11 {font-size: 1.1em;}
+.f_12 {font-size: 1.2em;}
+.f_13 {font-size: 1.3em;}
+.f_14 {font-size: 1.4em;}
+.f_15 {font-size: 1.5em;}
+.white {color:#fff;}
+.black {color: #000;}
+.main-color {color: var(--main-color);}
+.sec-color {color: var(--sec-color);}
+.l_blue {color: #4166d4;}
+.coral {color: #ea2529;}
+
+.fw_3 {font-weight: 300;} /* light */
+.fw_4 {font-weight: 400;} /* regular */
+.fw_5 {font-weight: 500;} /* medium */
+.fw_7 {font-weight: 700;} /* bold */
+.fw_9 {font-weight: 900;} /* black */
+.itlc {font-style: italic;}
+.norm {font-style: normal;}
+
+.tt_up {text-transform: uppercase;}
+.td_lth {text-decoration: line-through;}
+.lh_n {line-height: normal;}
+.lh_12 {line-height: 1.2em;}
+.bb_1 {border-bottom: 1px solid;}
+.bb_wtr {border-bottom: 1px solid rgba(255,255,255,.5);}
+.t_ind {text-indent: 2rem;}
+.op_05 {opacity: .5;}
+.w_25em {width: 2.5em;}
+
+
+
+/* Хлебные крошки */
+.breadscrumbs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin: 0 0 1em;
+}
+.breadscrumbs a {
+    font-size: 1.1em;
+    margin-right: .3em;
+    line-height: normal;
+    font-weight: 400;
+}
+.breadscrumbs span:before {
+    content: "/";
+    margin-right: .3em;
+}
+.breadscrumbs span:first-child {
+    font-weight: 400;
+    font-size: 1.1em;
+}
+.breadscrumbs span:first-child:before {content: unset;}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-flow: row wrap;
+    margin: .5em auto;
+}
+.page-item {padding: .25em .35em;}
+.page-link {
+    padding: 0;
+    line-height: normal;
+    background-color: transparent;
+    border: none;
+    font-weight: 300;
+    color: #000;
+}
+.page-link:hover, .page-link:active, .page-link.active {
+    background-color: transparent;
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+
+/* SLIDERS */
+.swiper_products, .swiper_products_4, .swiper_news, .swiper_reviews {overflow: hidden;}
+.swiper-button-prev, .swiper-button-next {
+    top: 10vw;
+    width: 23px;
+    height: 28px;
+    background-image: none;
+    margin-top: 0;
+}
+.swiper-button-prev img, .swiper-button-next img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.swiper-button-next {right: -30px;}
+.swiper-button-prev {left: -30px;}
