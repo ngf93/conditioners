@@ -10,15 +10,27 @@
 .main {
     background: url(../images/bg/bg_0.jpg) no-repeat top center;
     background-size: cover;
-    margin-bottom: 1.5em;
     position: relative;
 }
 header {
     position: relative;
     z-index: 1;
 }
+.logo img {
+    max-width: 200px;
+    max-height: 50px;
+    object-fit: scale-down;
+    object-position: center;
+}
+@media (max-width: 767px){
+    .logo img {
+        max-width: 100px;
+        max-height: 30px;
+    }
+}
+
 /* Меню */
-nav {
+header nav {
     width: 100%;
     padding: .5em 0 .4em !important;
 }
@@ -40,12 +52,17 @@ nav {
     color: var(--main-color);
     font-weight: 700;
 }
+
 .navbar-toggler .navbar-toggler-icon {
     display: block;
     height: 3px;
     margin-top: 5px;
     margin-bottom: 5px;
     background-color: var(--main-color);
+}
+
+@media (max-width: 767px){
+    header nav, .navbar {padding: 0 !important;}
 }
 
 
@@ -68,6 +85,17 @@ nav {
     border-top: 900px solid rgba(255, 255, 255, 0.85);
     border-right: 100px solid transparent;
     z-index: 0;
+}
+@media (max-width: 991px){
+    #sec_1::before {left: 0px;}
+}
+@media (max-width: 767px){
+    #sec_1::before {
+        border-top: unset;
+        border-right: unset;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
 }
 
 
@@ -103,10 +131,21 @@ nav {
     height: 3.6em;
 }
 
-
 /* SECTION 2 */
 .swiper_products .product {font-size: .9em;}
 .swiper_products .product img {height: 10vw;}
+
+@media (max-width: 991px){
+    .product img {height: 18vw;}
+    .swiper_products .product img {height: 14vw;}    
+}
+@media (max-width: 767px){
+    .product img, .swiper_products .product img {height: 30vw;}
+}
+@media (max-width: 575px){
+    .product {padding: .5em;}
+}
+
 
 
 /* SECTION 3 */
@@ -121,18 +160,48 @@ nav {
     justify-content: space-between;
     align-items: flex-start;
 }
-/* .stages>*:not(:first-child){margin-left: 1em;} */
 .step {
     text-align: center;
     padding: 0 .5em;
     width: calc((100% - 16em)/5);
 }
-.step img {
-    max-width: 100%;
-}
+.step img {max-width: 100%;}
 .stages .arrow {
     width: 2em;
     margin: 3em 1em 0;
+}
+@media (max-width: 1199px){
+    .stages .arrow {
+        width: 1em;
+        margin: 4em .5em 0;
+    }
+    .step {width: calc((100% - 8em)/5);}
+}
+@media (max-width: 991px){
+    .stages {font-size: .9em;}
+    #sec_3 {background-size: auto 80%;}
+}
+@media (max-width: 767px){
+    #sec_3 {background: unset;}
+    .stages {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .stages {font-size: 1.2em;}
+    .stages .arrow {
+        margin: .75em;
+        transform: rotate(90deg) translateY(-.75em);
+    }
+    .step {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    .step img {
+        width: 3em;
+        margin-right: 1em;
+    }
 }
 
 
@@ -168,6 +237,9 @@ nav {
 .rt_label {
     font-size: 1.4em;
     margin-right: .5em;
+}
+@media (max-width: 575px){
+    #countdown {font-size: .7em;}
 }
 
 
@@ -205,6 +277,12 @@ nav {
     height: 3.6em;
 }
 .news .text p, .news .text span {line-height: 1.2em;}
+@media (max-width: 991px){
+    .news img {height: 30vw;}
+}
+@media (max-width: 575px){
+    .news img {height: 60vw;}
+}
 
 
 
@@ -237,17 +315,30 @@ nav {
     padding: 1em 2em 2em;
     text-align: center;
 }
+@media (max-width: 991px){
+    #sec_6 {
+        background-image: linear-gradient(to left, #fff 30%, transparent), url(../images/bg/bg_4.jpg);
+        background-size: 100% 100%, auto 100%;
+        background-position: 100% 0%, 0% 0%;
+    }
+    .cloud_2 {display: none;}
+}
+@media (max-width: 767px){
+    .cloud_1 {display: none;}
+    #sec_6 {
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(../images/bg/bg_4.jpg);
+        background-size: 100% 100%, auto 100%;
+        background-position: 100% 0%, 0% 0%;
+    }
+}
 
 
 /* SECTION 7 */
 #sec_7 {
     background-color: #212121;
     color: #fff;
-    padding-top: 1em;
-    padding-bottom: 2em;
-    position: relative;
-    min-height: 350px;
-    padding-right: 4vw;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 .bottom_menu {
     font-weight: 400;
@@ -261,78 +352,26 @@ footer {
     background-color: #000;
     padding-top: .5em;
     padding-bottom: .5em;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
 }
 .copyright, .confidentiality {
     font-weight: 400;
     color: #b5b5b5;
     font-size: .9em;
-    margin-right: 1em;
 }
 /* ASM */
-.developers {text-align: right;}
-.developers a {
+a.developers  {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    text-align: right;
 }
-.developers a>p {
+a.developers span {
     font-family: "coco", Arial, sans-serif;
     color: #b5b5b5;
     font-size: 19px;
     line-height: 1em;
-    display: inline-block;
-    vertical-align: middle;
     margin: 0 .5em 0 0;
 }
-.developers img {max-width: 60px;}
+a.developers img {max-width: 60px;}
 
-/* Всплывающая форма обратной связи */
-.order_modal {margin-bottom: 2em;}
-#Modal_cb .modal-dialog {
-    width: 70%;
-    max-width: unset;
-}
-#Modal_cb .modal-content {
-    background-image: linear-gradient(to right, transparent 25%, #fff 50%), url(../images/bg/bg_callback_modal.jpg);
-    background-repeat: no-repeat;
-    background-position: right center, left center;
-    background-size: 100% 100%, auto 100%;
-    border-radius: 0;
-    border: 1px solid var(--main-color);
-    padding: 1.5em 3em 0;
-}
-.close {
-    float: right;
-    font-size: 3em;
-    font-weight: 700;
-    line-height: 1em;
-    color: rgba(255, 0, 0, 0.5);
-    text-shadow: unset;
-    opacity: 1;
-    position: absolute;
-    top: -.5em;
-    right: -.75em;
-    z-index: 100;
-}
-.close:hover {
-    color: #f00;
-    opacity: 1;
-}
-.cloud_3 {
-    position: absolute;
-    top: 0%;
-    right: 50%;
-    width: 11vw;
-    z-index: 0;
-}
-
-/* Шрифты */
-@font-face {
-    font-family: 'coco';
-    src: url('../fonts/CocoBiker Regular-trial.ttf');
-}

@@ -11,6 +11,10 @@ body {
     font-size: 20px;
     font-weight: 300;
 }
+.site_box {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
 @media (max-width: 1599px){
     body {font-size: 18px;}
 }
@@ -19,6 +23,13 @@ body {
 }
 @media (max-width: 1199px){
     body {font-size: 16px;}
+}
+@media (max-width: 991px){
+	body {font-size: 14px;}
+    .site_box {
+	    padding-left: 4vw;
+	    padding-right: 4vw;
+	}
 }
 
 
@@ -42,10 +53,7 @@ p, label, span, a, form, select, div, section, blockquote, cite, figure, figcapt
     margin-bottom: 0px;
 }
 
-.site_box {
-    padding-left: 8vw;
-    padding-right: 8vw;
-}
+
 .rel {position: relative;}
 .disable {
     pointer-events: none;
@@ -77,10 +85,12 @@ input, textarea {
     width: 100%;
     line-height: normal;
 }
+@media (max-width: 767px){
+    input, textarea {padding: .6em .75em;}
+}
 
-.check-text {position: relative;}
-
-.check-text input {
+.check-text, .radio-text {position: relative;}
+.check-text input, .radio-text input {
     -webkit-appearance:none;
     -moz-appearance:none;
     -ms-appearance:none;
@@ -88,13 +98,15 @@ input, textarea {
     opacity: 0;
     display: none;
 }
-.check-text label {
+.check-text label, .radio-text label {
     position: relative;
     z-index: 1;
     color: #3f3f3f;
 }
-.check-text input:checked + label {
+.check-text input:checked + label,
+.radio-text input:checked + label {
     color: var(--main-color);
+    font-weight: 500;
 }
 
 select {
@@ -106,7 +118,7 @@ select {
     border-radius: .25em;
     padding: .2em .5em;
     line-height: normal;
-    background: url(../images/icons/down.png) no-repeat #fff;
+    background: url(../images/icons/down2.png) no-repeat #fff;
     background-position: 95% 50%;
     background-size: auto 30%;
 }
@@ -115,6 +127,16 @@ select::-ms-expand { /* for IE 11 */
 }
 select:hover {cursor: pointer;}
 
+
+button {
+    background: none;
+    border: none;
+    padding: unset;
+    display: block;
+}
+button:hover, button:focus, button:active {cursor: pointer;}
+button:disabled {pointer-events: none;}
+button:not(:disabled){pointer-events: auto;}
 .btn_main {
     border-radius: 7px;
     border: none;
@@ -159,6 +181,9 @@ select:hover {cursor: pointer;}
     color: #fff;
     background-color: #ea2529;
     cursor: pointer;
+}
+@media (max-width: 575px){
+    .btn_main {padding: 0 1em;}
 }
 
 /* Текстовые стили */
@@ -269,6 +294,15 @@ h5 {
     margin-top: .5em;
     margin-bottom: .5em;
 }
+@media (max-width: 767px){
+    h1 {
+        font-size: 2em;
+        margin: 0 0 .5em;
+    }
+}
+@media (max-width: 575px){
+    h2 {font-size: 1.8em;}
+}
 
 .f_08 {font-size: .8em;}
 .f_09 {font-size: .9em;}
@@ -281,8 +315,6 @@ h5 {
 .black {color: #000;}
 .main-color {color: var(--main-color);}
 .sec-color {color: var(--sec-color);}
-.l_blue {color: #4166d4;}
-.coral {color: #ea2529;}
 
 .fw_3 {font-weight: 300;} /* light */
 .fw_4 {font-weight: 400;} /* regular */
@@ -355,7 +387,7 @@ h5 {
 /* SLIDERS */
 .swiper_products, .swiper_products_4, .swiper_news, .swiper_reviews {overflow: hidden;}
 .swiper-button-prev, .swiper-button-next {
-    top: 10vw;
+    top: calc(50% - 14px);
     width: 23px;
     height: 28px;
     background-image: none;
@@ -369,3 +401,50 @@ h5 {
 }
 .swiper-button-next {right: -30px;}
 .swiper-button-prev {left: -30px;}
+.swiper-button-next:after, .swiper-button-prev:after {content: unset;}
+@media (max-width: 991px){
+    .swiper_products, .swiper_products_4, .swiper_news, .swiper_reviews {position: relative;}
+    .swiper-button-next {right: 0px;}
+    .swiper-button-prev {left: 0px;}
+}
+
+
+/* MODAL */
+.offcanvas-body {
+    position: relative;
+    padding: 2em;
+}
+
+#mobileMenu nav ul {
+    list-style: none;
+    padding-left: 0px;
+}
+#mobileMenu nav ul li {margin-bottom: 1em;}
+#mobileMenu nav ul li a {
+    font-size: 1.5em;
+}
+#mobileMenu nav ul li a:hover,
+#mobileMenu nav ul li a:focus,
+#mobileMenu nav ul li a:active {
+    font-weight: 500;
+}
+
+.modal-content {
+    background-color: #dbe4f1;
+    border-radius: 0;
+    border: none;
+    padding: 2em;
+}
+
+.btn-close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+
+/* Шрифты */
+@font-face {
+    font-family: 'coco';
+    src: url('../fonts/CocoBiker Regular-trial.ttf');
+}

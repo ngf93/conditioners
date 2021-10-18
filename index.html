@@ -5,42 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ТВЦ</title>
-  <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/png">
-  <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="swiper/swiper.min.css" />
-  <link rel="stylesheet" href="fancybox/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="fonts/GothamPro/stylesheet.css" />
   <link rel="stylesheet" href="css/common.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/media.css" />
 </head>
 <body>
 	<div class="h_top">
-		<p><a href="#Modal_cb" data-toggle="modal" class="tt_up bb_wtr">узнай, как Получить скидку на установку оборудования!</a></p>
+		<p><a data-bs-toggle="modal" href="#Modal_cb" class="tt_up bb_wtr">узнай, как Получить скидку на установку оборудования!</a></p>
 	</div>
-	<section class="main site_box pb-4">
-		<header class="d-flex justify-content-between align-items-center py-4">
-			<div class="logo"></div>
+
+	<section class="main site_box pb-4 mb-md-4">
+		<header class="d-flex justify-content-between align-items-center py-3 py-md-4">
+			<button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="logo">
+				<img src="images/logo.png" alt="">
+			</div>
 			<div class="d-flex align-items-center">
-				<div class="text-end">
-					<p class="mb-1">Казань, Названиеулицы, д. 123, офис 345</p>
-					<p>Прием заявок с 9:00 до 23:00 ежедневно</p>
+				<div class="text-end d-none d-md-block">
+					<div class="mb-1">Казань, Названиеулицы, д. 123, офис 345</div>
+					<div>Прием заявок с 9:00 до 23:00 ежедневно</div>
 				</div>
-				<div class="ms-4 text-end">
-					<p class="fw_4 blue mb-1"><a href="tel:88430000000">8 843 000 00 00</a></p>
-					<p class="fw_4 blue"><a href="tel:89000000000">8 900 000 00 00</a></p>
+				<div class="ms-2 ms-sm-4 text-end">
+					<div class="fw_4 main-color mb-1"><a href="tel:88430000000">8 843 000 00 00</a></div>
+					<div class="fw_4 main-color"><a href="tel:89000000000">8 900 000 00 00</a></div>
 				</div>
 			</div>
 		</header>
-		<div class="row">
-			<div class="col-7">
+		<div class="row align-items-center align-items-md-start">
+			<div class="col-sm-8 col-md-7">
 				<nav class="navbar navbar-expand-md">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_1" aria-controls="menu_1" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-							<span class="navbar-toggler-icon"></span>
-							<span class="navbar-toggler-icon"></span>
-					</button>
 					<div class="collapse navbar-collapse" id="menu_1">
 						<ul class="navbar-nav ml-auto mr-auto">
 							<li class="nav-item active">
@@ -50,27 +49,24 @@
 								<a class="nav-link" href="catalog.html">Каталог</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="sales.html">Акции</a>
+								<a class="nav-link" href="">Акции</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="news.html">Новости</a>
+								<a class="nav-link" href="">Новости</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="reviews.html">Отзывы</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="contacts.html">Контакты</a>
+								<a class="nav-link" href="">Контакты</a>
 							</li>                         
 						</ul> 
 					</div>
 				</nav>
-				<div class="text-end">
+				<div class="text-center text-sm-end">
 					<h1>установка кондиционеров в казани</h1>
 					<p class="mb-4">В стоимость входят: оборудование, оборудование, оборудование, оборудование и установка</p>
-					<button type="button" data-bs-toggle="modal" data-bs-target="#Modal_cb" class="btn_main ms-auto">Оставить заявку</button>
+					<button type="button" data-bs-toggle="modal" data-bs-target="#Modal_cb" class="btn_main me-auto me-sm-0 ms-auto">Оставить заявку</button>
 				</div>
 			</div>
-			<div class="col-5">
+			<div class="col-sm-4 col-md-5">
 				<img src="images/main-img.png" alt="" class="img-fluid">
 			</div>
 		</div>
@@ -101,33 +97,33 @@
 					        	<div class="product p-0 mb-0">
 									<img src="images/product.png" alt="Название услуги">
 									<div class="px-2">
-										<div class="main-color fw_7 f_12 mb-2">5 500 руб.</div>
+										<div class="main-color fw_7 f_12 mb-1 mb-sm-2">5 500 руб.</div>
 										<div class="title">Название услуги</div>
 										<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
 									</div>
-									<a href="tovar.html" class="btn_main w-100 mt-3">подробнее</a>
+									<a href="tovar.html" class="btn_main w-100 mt-2 mt-sm-3">подробнее</a>
 								</div>
 					        </div>
 					        <div class="swiper-slide">
 					        	<div class="product p-0 mb-0">
 									<img src="images/product.png" alt="Название услуги">
 									<div class="px-2">
-										<div class="main-color fw_7 f_12 mb-2">5 500 руб.</div>
+										<div class="main-color fw_7 f_12 mb-1 mb-sm-2">5 500 руб.</div>
 										<div class="title">Название услуги</div>
 										<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
 									</div>
-									<a href="tovar.html" class="btn_main w-100 mt-3">подробнее</a>
+									<a href="tovar.html" class="btn_main w-100 mt-2 mt-sm-3">подробнее</a>
 								</div>
 					        </div>
-					        <div class="swiper-slide">
+							<div class="swiper-slide">
 					        	<div class="product p-0 mb-0">
 									<img src="images/product.png" alt="Название услуги">
 									<div class="px-2">
-										<div class="main-color fw_7 f_12 mb-2">5 500 руб.</div>
+										<div class="main-color fw_7 f_12 mb-1 mb-sm-2">5 500 руб.</div>
 										<div class="title">Название услуги</div>
 										<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
 									</div>
-									<a href="tovar.html" class="btn_main w-100 mt-3">подробнее</a>
+									<a href="tovar.html" class="btn_main w-100 mt-2 mt-sm-3">подробнее</a>
 								</div>
 					        </div>
 					    </div>
@@ -142,9 +138,13 @@
 	</section>
 
 	<section id="sec_2" class="site_box">
-		<h2 class="mb-5">Каталог</h2>
+		<h2 class="mb-4 mb-sm-5">Каталог</h2>
+		<button type="button" class="d-flex d-md-none align-items-center mb-4" data-bs-toggle="offcanvas" data-bs-target="#mobileFilter">
+			<img src="images/icons/filter.png" alt="" class="w_25em">
+			<span class="tt_up f_14 fw_4 ms-4">Фильтры</span>
+		</button>
 		<div class="row">
-			<div class="col-3">
+			<div class="d-none d-md-block col-md-4 col-lg-3">
 				<div class="main-color f_12 fw_4 tt_up mb-3">Площадь помещения</div>
 				<div class="ps-4 ps-xxl-5 fw_4 mb-4">
 					<div class="check-text mb-2">
@@ -195,15 +195,15 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-9">
-				<div class="row row-cols-3">
+			<div class="col-md-8 col-lg-9">
+				<div class="row row-cols-2 row-cols-lg-3 gx-2 gx-sm-4">
 					<div>
 						<div class="product">
 							<img src="images/product.png" alt="Название услуги">
 							<div class="title">Название услуги</div>
 							<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
-							<div class="main-color fw_7 f_12 mt-3">5 500 руб.</div>
-							<a href="tovar.html" class="btn_main mx-auto mt-4">подробнее</a>
+							<div class="main-color fw_7 f_12 mt-1 mt-sm-3">5 500 руб.</div>
+							<a href="tovar.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
 						</div>
 					</div>
 					<div>
@@ -211,8 +211,8 @@
 							<img src="images/product.png" alt="Название услуги">
 							<div class="title">Название услуги</div>
 							<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
-							<div class="main-color fw_7 f_12 mt-3">5 500 руб.</div>
-							<a href="tovar.html" class="btn_main mx-auto mt-4">подробнее</a>
+							<div class="main-color fw_7 f_12 mt-1 mt-sm-3">5 500 руб.</div>
+							<a href="tovar.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
 						</div>
 					</div>
 					<div>
@@ -220,8 +220,8 @@
 							<img src="images/product.png" alt="Название услуги">
 							<div class="title">Название услуги</div>
 							<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
-							<div class="main-color fw_7 f_12 mt-3">5 500 руб.</div>
-							<a href="tovar.html" class="btn_main mx-auto mt-4">подробнее</a>
+							<div class="main-color fw_7 f_12 mt-1 mt-sm-3">5 500 руб.</div>
+							<a href="tovar.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
 						</div>
 					</div>
 					<div>
@@ -229,8 +229,8 @@
 							<img src="images/product.png" alt="Название услуги">
 							<div class="title">Название услуги</div>
 							<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
-							<div class="main-color fw_7 f_12 mt-3">5 500 руб.</div>
-							<a href="tovar.html" class="btn_main mx-auto mt-4">подробнее</a>
+							<div class="main-color fw_7 f_12 mt-1 mt-sm-3">5 500 руб.</div>
+							<a href="tovar.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
 						</div>
 					</div>
 					<div>
@@ -238,8 +238,8 @@
 							<img src="images/product.png" alt="Название услуги">
 							<div class="title">Название услуги</div>
 							<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
-							<div class="main-color fw_7 f_12 mt-3">5 500 руб.</div>
-							<a href="tovar.html" class="btn_main mx-auto mt-4">подробнее</a>
+							<div class="main-color fw_7 f_12 mt-1 mt-sm-3">5 500 руб.</div>
+							<a href="tovar.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
 						</div>
 					</div>
 					<div>
@@ -247,8 +247,8 @@
 							<img src="images/product.png" alt="Название услуги">
 							<div class="title">Название услуги</div>
 							<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
-							<div class="main-color fw_7 f_12 mt-3">5 500 руб.</div>
-							<a href="tovar.html" class="btn_main mx-auto mt-4">подробнее</a>
+							<div class="main-color fw_7 f_12 mt-1 mt-sm-3">5 500 руб.</div>
+							<a href="tovar.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
 						</div>
 					</div>
 				</div>
@@ -261,8 +261,6 @@
 				</ul>
 			</div>
 		</div>
-		<!-- <div class="catalog">
-		</div> -->
 	</section>
 	
 	<section id="sec_3" class="site_box">
@@ -278,27 +276,27 @@
 		<div class="stages">
 			<div class="step">
 				<img src="images/icons/icon1.png" alt="">
-				<div class="tt_up fw_4 main-color mt-4">Ваша заявка или звонок</div>
+				<div class="tt_up fw_4 main-color mt-md-2 mt-lg-4">Ваша заявка или звонок</div>
 			</div>
 			<img src="images/icons/right.png" alt="" class="arrow">
 			<div class="step">
 				<img src="images/icons/icon2.png" alt="">
-				<div class="tt_up fw_4 main-color mt-4">Определение цены и даты</div>
+				<div class="tt_up fw_4 main-color mt-md-2 mt-lg-4">Определение цены и даты</div>
 			</div>
 			<img src="images/icons/right.png" alt="" class="arrow">
 			<div class="step">
 				<img src="images/icons/icon3.png" alt="">
-				<div class="tt_up fw_4 main-color mt-4">Выезд монтажника</div>
+				<div class="tt_up fw_4 main-color mt-md-2 mt-lg-4">Выезд монтажника</div>
 			</div>
 			<img src="images/icons/right.png" alt="" class="arrow">
 			<div class="step">
 				<img src="images/icons/icon4.png" alt="">
-				<div class="tt_up fw_4 main-color mt-4">Установка кондиционера</div>
+				<div class="tt_up fw_4 main-color mt-md-2 mt-lg-4">Установка кондиционера</div>
 			</div>
 			<img src="images/icons/right.png" alt="" class="arrow">
 			<div class="step">
 				<img src="images/icons/icon5.png" alt="">
-				<div class="tt_up fw_4 main-color mt-4">Приятный микроклимат</div>
+				<div class="tt_up fw_4 main-color mt-md-2 mt-lg-4">Приятный микроклимат</div>
 			</div>
 		</div>
 		<!-- <div class="row text-center mt-4 mb-4">
@@ -325,8 +323,7 @@
 		</div> -->
 	</section>
 
-	<section id="sec_4" class="site_box pt-5 pb-3">
-		<!-- <img src="images/img1.png" alt="" class="akcia_img"> -->
+	<section id="sec_4" class="site_box pt-3 pt-sm-5 pb-3">
 		<div class="row">
 			<div class="col-12 col-sm-8 col-md-8 col-lg-7 col-xl-6">
 				<h4>Установка СПЛИТ-СИСТЕМЫ всего за 9 000 рублей!</h4>
@@ -343,7 +340,7 @@
 				  <span class="remaining_time" id="rm_seconds"></span>
 				  <span class="rt_label mr-0">с.</span>
 				</div>
-				<button href="#Modal_cb" data-toggle="modal" class="btn_main mt-4 mb-4">Оставить заявку</button>
+				<button type="button" data-bs-toggle="modal" data-bs-target="#Modal_cb" class="btn_main mt-4 mb-4">Оставить заявку</button>
 			</div>
 		</div>
 		<div>* Подробности акции, а также условия предоставления скидки уточняйте у вашего менеджера</div>
@@ -404,12 +401,12 @@
 	</section>
 
 	<section id="sec_7" class="site_box">
-		<div class="row row-cols-3 gx-4 gx-xl-5 align-items-center">
-			<div>
+		<div class="row gx-4 gx-xl-5 align-items-center">
+			<div class="col-12 col-lg-4 order-4 order-lg-1 mt-4 mt-lg-0">
 				<p class="op_05 text-justify f_08 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<p class="op_05 text-justify f_08">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
 			</div>
-			<div>
+			<div class="col-sm-6 col-lg-4 order-2">
 				<div class="row">
 					<div class="col-5">
 						<h5>Меню</h5>
@@ -440,67 +437,126 @@
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="col-sm-6 col-lg-4 order-3">
 				<div class="map">
 					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4e25d1d4e4774b598865234db391f2f986f6e953fdf5550f4dfaa9d14b6fe276&amp;width=100%25&amp;height=273&amp;lang=ru_RU&amp;scroll=false"></script>
 				</div>
 			</div>
-			<!-- <div class="col-12 col-md-6 col-lg-4">
-				<div class="monitor">
-					<img src="images/bg/monitor.png" alt="">
-					
-				</div>
-			</div> -->
 		</div>
 	</section>
 
 	<footer class="site_box">
-		<div class="copyright">
-			<p>TVвидеоЦентр © <span id="year"></span></p>
-		</div>
-		<div class="confidentiality">
-			<p><a href="#">Политика конфиденциальности</a></p>
-		</div>
-		<div class="developers">
-			<a href="http://asmpromo.ru/" alt="Создание и продвижение сайтов" title="Создание и продвижение сайтов" target="_blanc">
-				<p>Создание и продвижение сайтов</p>
-				<img src="images/asm_white.png" alt="">
-			</a>
+		<div class="row align-items-center">
+			<div class="col-sm-6 col-md-8 mb-3 text-center text-sm-left">
+				<div class="row row-cols-md-2">
+					<div class="copyright">TVвидеоЦентр © <span id="year"></span></div>
+					<div class="confidentiality mt-2 mt-md-0"><a href="#">Политика конфиденциальности</a></div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<a class="developers" href="http://asmpromo.ru/" alt="Создание и продвижение сайтов" title="Создание и продвижение сайтов" target="_blanc">
+					<span>Создание и продвижение сайтов</span>
+					<img src="images/asm_white.png" alt="">
+				</a>
+			</div>
 		</div>
 	</footer>
 
-	<!-- Modal -->
-	<div class="modal fade" id="Modal_cb" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-body">
-					<img src="images/icons/cloud_3.png" alt="" class="cloud_3">
-				  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					<div class="row justify-content-end">
-						<div class="col-12 col-md-7 col-lg-6 col-xl-6">
-							<h3 class="blue">Оставить заявку на подключение:</h3>
-							<p class="text-center mb-4">Перезвоним вам в ближайшее время:</p>
-							<form action="" class="order_modal">
-								<input type="text" placeholder="Ваше имя" class="mb-2">
-								<input type="text" placeholder="Телефон" class="mb-2">
-								<textarea rows="3" placeholder="Комментарий" class="mb-2"></textarea>
-								<input type="submit" value="Оставить заявку" class="btn_main ml-auto mr-auto">
-							</form>
-							<p class="text-center f_08 op_05">*Подробности уточняйте у вашего персонального менеджера</p>
-						</div>
-					</div>
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+		<div class="offcanvas-body py-5">
+			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			<nav>
+				<ul>
+					<li><a class="nav-link" href="index.html">Главная</a></li>
+					<li><a class="nav-link" href="catalog.html">Каталог</a></li>
+					<li><a class="nav-link" href="">Акции</a></li>
+					<li><a class="nav-link" href="">Новости</a></li>
+					<li><a class="nav-link" href="">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="mt-5 mb-2 fw_4">Казань, Названиеулицы, д. 123, офис 345</div>
+			<div class="fw_4">Прием заявок с 9:00 до 23:00 ежедневно</div>
+		</div>
+	</div>
+
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileFilter">
+		<div class="offcanvas-body py-5">
+			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			<div class="main-color f_12 fw_4 tt_up mb-3">Площадь помещения</div>
+			<div class="ps-4 ps-xxl-5 fw_4 mb-4">
+				<div class="check-text mb-2">
+					<input type="checkbox" name="area" id="area-10" value="До 10 м2">
+					<label for="area-10">До 10 м<sup>2</sup></label>
+				</div>
+				<div class="check-text mb-2">
+					<input type="checkbox" name="area" id="area-15" value="До 15 м2">
+					<label for="area-15">До 15 м<sup>2</sup></label>
+				</div>
+				<div class="check-text mb-2">
+					<input type="checkbox" name="area" id="area-20" value="До 20 м2">
+					<label for="area-20">До 20 м<sup>2</sup></label>
+				</div>
+			</div>
+			<div class="main-color f_12 fw_4 tt_up mb-3">Системы</div>
+			<div class="ps-4 ps-xxl-5 fw_4 mb-4">
+				<div class="check-text mb-2">
+					<input type="checkbox" name="systems" id="systems-1" value="Сплит-системы">
+					<label for="systems-1">Сплит-системы</label>
+				</div>
+				<div class="check-text mb-2">
+					<input type="checkbox" name="systems" id="systems-2" value="Мульти-сплит системы">
+					<label for="systems-2">Мульти-сплит системы</label>
+				</div>
+			</div>
+			<div class="main-color f_12 fw_4 tt_up mb-3">Производитель</div>
+			<div class="ps-4 ps-xxl-5 fw_4 mb-4">
+				<div class="check-text mb-2">
+					<input type="checkbox" name="manufacturer" id="manufacturer-1" value="SENSEI">
+					<label for="manufacturer-1">SENSEI</label>
+				</div>
+				<div class="check-text mb-2">
+					<input type="checkbox" name="manufacturer" id="manufacturer-2" value="SAMURAI">
+					<label for="manufacturer-2">SAMURAI</label>
+				</div>
+				<div class="check-text mb-2">
+					<input type="checkbox" name="manufacturer" id="manufacturer-3" value="SAMSUNG">
+					<label for="manufacturer-3">SAMSUNG</label>
+				</div>
+				<div class="check-text mb-2">
+					<input type="checkbox" name="manufacturer" id="manufacturer-4" value="XIOMI">
+					<label for="manufacturer-4">XIOMI</label>
+				</div>
+				<div class="check-text mb-2">
+					<input type="checkbox" name="manufacturer" id="manufacturer-5" value="LG">
+					<label for="manufacturer-5">LG</label>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- Skripts -->
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<!-- Modal -->
+	<div class="modal fade" id="Modal_cb" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<h5 class="main-color text-center">Оставить заявку на подключение:</h5>
+				<p class="text-center mb-4">Перезвоним вам в ближайшее время:</p>
+				<form action="">
+					<input type="text" placeholder="Ваше имя" class="mb-2">
+					<input type="text" placeholder="Телефон" class="mb-2">
+					<textarea rows="3" placeholder="Комментарий" class="mb-2"></textarea>
+					<button type="submit" class="btn_main mx-auto">Оставить заявку</button>
+					<div class="text-center f_08 mt-3">*Подробности уточняйте у вашего персонального менеджера</d>
+				</form>
+			</div>
+		</div>
+	</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script type="text/javascript" src="swiper/swiper.min.js"></script>
-<script type="text/javascript" src="fancybox/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/time.js"></script>
+	<!-- Skripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="js/sliders.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/time.js"></script>
 </body>
 </html>
