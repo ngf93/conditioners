@@ -16,6 +16,7 @@ header {
     position: relative;
     z-index: 1;
 }
+.logo {display: block;}
 .logo img {
     max-width: 200px;
     max-height: 50px;
@@ -63,6 +64,17 @@ header nav {
 
 @media (max-width: 767px){
     header nav, .navbar {padding: 0 !important;}
+}
+@media (max-width: 575px){
+    .navbar-toggler {
+        padding: 0 .5em;
+        font-size: 1em;
+    }
+    .navbar-toggler .navbar-toggler-icon {
+        height: 3px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
 }
 
 

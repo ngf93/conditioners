@@ -116,7 +116,7 @@ select {
     appearance:none;
     border: 1px solid #b8b8b8;
     border-radius: .25em;
-    padding: .2em .5em;
+    padding: .3em 1.5em .3em .5em;
     line-height: normal;
     background: url(../images/icons/down2.png) no-repeat #fff;
     background-position: 95% 50%;
@@ -218,6 +218,14 @@ h1 {
          2px -2px 1px var(--main-color),
         -2px  2px 1px var(--main-color),
          2px  2px 1px var(--main-color);
+}
+h1.inner {
+    text-shadow: unset;
+    color: #000;
+    text-transform: initial;
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 500;
 }
 h2 {
     color: #fff;
@@ -333,7 +341,7 @@ h5 {
 .t_ind {text-indent: 2rem;}
 .op_05 {opacity: .5;}
 .w_25em {width: 2.5em;}
-
+.w_15em {width: 1.5em;}
 
 
 /* Хлебные крошки */

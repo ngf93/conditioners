@@ -49,13 +49,10 @@
 								<a class="nav-link" href="catalog.html">Каталог</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="">Акции</a>
+								<a class="nav-link" href="news.html">Новости</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="">Новости</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="">Контакты</a>
+								<a class="nav-link" href="contacts.html">Контакты</a>
 							</li>                         
 						</ul> 
 					</div>
@@ -101,7 +98,7 @@
 										<div class="title">Название услуги</div>
 										<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
 									</div>
-									<a href="tovar.html" class="btn_main w-100 mt-2 mt-sm-3">подробнее</a>
+									<a href="product.html" class="btn_main w-100 mt-2 mt-sm-3">подробнее</a>
 								</div>
 					        </div>
 					        <div class="swiper-slide">
@@ -112,7 +109,7 @@
 										<div class="title">Название услуги</div>
 										<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
 									</div>
-									<a href="tovar.html" class="btn_main w-100 mt-2 mt-sm-3">подробнее</a>
+									<a href="product.html" class="btn_main w-100 mt-2 mt-sm-3">подробнее</a>
 								</div>
 					        </div>
 							<div class="swiper-slide">
@@ -123,7 +120,7 @@
 										<div class="title">Название услуги</div>
 										<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
 									</div>
-									<a href="tovar.html" class="btn_main w-100 mt-2 mt-sm-3">подробнее</a>
+									<a href="product.html" class="btn_main w-100 mt-2 mt-sm-3">подробнее</a>
 								</div>
 					        </div>
 					    </div>
@@ -139,12 +136,8 @@
 
 	<section id="sec_2" class="site_box">
 		<h2 class="mb-4 mb-sm-5">Каталог</h2>
-		<button type="button" class="d-flex d-md-none align-items-center mb-4" data-bs-toggle="offcanvas" data-bs-target="#mobileFilter">
-			<img src="images/icons/filter.png" alt="" class="w_25em">
-			<span class="tt_up f_14 fw_4 ms-4">Фильтры</span>
-		</button>
 		<div class="row">
-			<div class="d-none d-md-block col-md-4 col-lg-3">
+			<div class="d-none d-lg-block col-lg-3">
 				<div class="main-color f_12 fw_4 tt_up mb-3">Площадь помещения</div>
 				<div class="ps-4 ps-xxl-5 fw_4 mb-4">
 					<div class="check-text mb-2">
@@ -195,15 +188,54 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-8 col-lg-9">
-				<div class="row row-cols-2 row-cols-lg-3 gx-2 gx-sm-4">
+			<div class="col-lg-9">
+				<div class="d-flex justify-content-between align-items-center mb-4">
+					<div class="d-none d-lg-flex align-items-center">
+						<div class="me-3">Сортировать по:</div>
+						<select>
+							<option value="по популярности">по популярности</option>
+							<option value="по возрастанию цены">по возрастанию цены</option>
+							<option value="по убыванию цены">по убыванию цены</option>
+						</select>
+					</div>
+					<button type="button" class="d-flex d-lg-none align-items-center" data-bs-toggle="offcanvas" data-bs-target="#mobileFilter">
+						<img src="images/icons/filter.png" alt="" class="w_15em">
+						<span class="tt_up f_12 fw_4 ms-2">Фильтры</span>
+					</button>
+					<div class="d-flex flex-column flex-sm-row align-items-sm-center">
+						<div class="me-sm-3">Показать по:</div>
+						<div class="d-flex align-items-center">
+							<div class="radio-text">
+								<input type="radio" name="page-count" value="6" id="count-6" checked>
+								<label for="count-6">6</label>
+							</div>
+							<div class="radio-text ms-2">
+								<input type="radio" name="page-count" value="12" id="count-12">
+								<label for="count-12">12</label>
+							</div>
+							<div class="radio-text ms-2">
+								<input type="radio" name="page-count" value="24" id="count-24">
+								<label for="count-24">24</label>
+							</div>
+							<div class="radio-text ms-2">
+								<input type="radio" name="page-count" value="36" id="count-36">
+								<label for="count-36">36</label>
+							</div>
+							<div class="radio-text ms-2">
+								<input type="radio" name="page-count" value="all" id="count-all">
+								<label for="count-all">все</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-cols-2 row-cols-md-3 gx-2 gx-sm-4">
 					<div>
 						<div class="product">
 							<img src="images/product.png" alt="Название услуги">
 							<div class="title">Название услуги</div>
 							<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
 							<div class="main-color fw_7 f_12 mt-1 mt-sm-3">5 500 руб.</div>
-							<a href="tovar.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
+							<a href="product.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
 						</div>
 					</div>
 					<div>
@@ -212,7 +244,7 @@
 							<div class="title">Название услуги</div>
 							<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
 							<div class="main-color fw_7 f_12 mt-1 mt-sm-3">5 500 руб.</div>
-							<a href="tovar.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
+							<a href="product.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
 						</div>
 					</div>
 					<div>
@@ -221,7 +253,7 @@
 							<div class="title">Название услуги</div>
 							<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
 							<div class="main-color fw_7 f_12 mt-1 mt-sm-3">5 500 руб.</div>
-							<a href="tovar.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
+							<a href="product.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
 						</div>
 					</div>
 					<div>
@@ -230,7 +262,7 @@
 							<div class="title">Название услуги</div>
 							<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
 							<div class="main-color fw_7 f_12 mt-1 mt-sm-3">5 500 руб.</div>
-							<a href="tovar.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
+							<a href="product.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
 						</div>
 					</div>
 					<div>
@@ -239,7 +271,7 @@
 							<div class="title">Название услуги</div>
 							<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
 							<div class="main-color fw_7 f_12 mt-1 mt-sm-3">5 500 руб.</div>
-							<a href="tovar.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
+							<a href="product.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
 						</div>
 					</div>
 					<div>
@@ -248,7 +280,7 @@
 							<div class="title">Название услуги</div>
 							<div class="text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do</div>
 							<div class="main-color fw_7 f_12 mt-1 mt-sm-3">5 500 руб.</div>
-							<a href="tovar.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
+							<a href="product.html" class="btn_main mx-auto mt-2 mt-sm-4">подробнее</a>
 						</div>
 					</div>
 				</div>
@@ -413,9 +445,7 @@
 						<ul class="bottom_menu">
 							<li class="mb-2"><a href="index.html">Главная</a></li>
 							<li class="mb-2"><a href="catalog.html">Каталог</a></li>
-							<li class="mb-2"><a href="sales.html">Акции</a></li>
 							<li class="mb-2"><a href="news.html">Новости</a></li>
-							<li class="mb-2"><a href="reviews.html">Отзывы</a></li>
 							<li class="mb-2"><a href="contacts.html">Контакты</a></li>
 						</ul>
 					</div>
@@ -469,9 +499,8 @@
 				<ul>
 					<li><a class="nav-link" href="index.html">Главная</a></li>
 					<li><a class="nav-link" href="catalog.html">Каталог</a></li>
-					<li><a class="nav-link" href="">Акции</a></li>
-					<li><a class="nav-link" href="">Новости</a></li>
-					<li><a class="nav-link" href="">Контакты</a></li>
+					<li><a class="nav-link" href="news.html">Новости</a></li>
+					<li><a class="nav-link" href="contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="mt-5 mb-2 fw_4">Казань, Названиеулицы, д. 123, офис 345</div>
@@ -482,8 +511,14 @@
 	<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileFilter">
 		<div class="offcanvas-body py-5">
 			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			<div class="main-color f_12 fw_4 tt_up mb-3">Сортировать по:</div>
+			<select class="mb-4">
+				<option value="по популярности">по популярности</option>
+				<option value="по возрастанию цены">по возрастанию цены</option>
+				<option value="по убыванию цены">по убыванию цены</option>
+			</select>
 			<div class="main-color f_12 fw_4 tt_up mb-3">Площадь помещения</div>
-			<div class="ps-4 ps-xxl-5 fw_4 mb-4">
+			<div class="ps-4 ps-xxl-5 fw_4 ">
 				<div class="check-text mb-2">
 					<input type="checkbox" name="area" id="area-10" value="До 10 м2">
 					<label for="area-10">До 10 м<sup>2</sup></label>
